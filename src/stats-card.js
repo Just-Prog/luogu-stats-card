@@ -55,8 +55,12 @@ async function fetchStats(id) {
     },
   );
 
-  for (let i of practiceRes.data.data.passed) {
-    stats.passed[i.difficulty]++;
+  let levelCount = 0;
+  while (levelCount < 8) {
+    stats.passed[levelCount] = practiceRes.data.data.passed.filter(
+      (v, k) => v.difficulty === levelCount,
+    ).length;
+    levelCount++;
   }
 
   stats.passed[8] = practiceRes.data.data.submitted.length;
