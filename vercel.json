@@ -22,11 +22,9 @@
       "src": "/",
       "status": 301,
       "headers": {
-        "Location": "https://github.com/bossbaby2005/luogu-stats-card"
+        "Location": "https://github.com/Just-Prog/luogu-stats-card"
       }
     }
   ],
-  "regions": [
-    "hkg1"
-  ]
+  "regions": ["hkg1"]
 }

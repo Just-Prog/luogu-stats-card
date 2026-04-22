@@ -10,5 +10,8 @@
   "dependencies": {
     "anafanafo": "^1.0.0",
     "axios": "^0.21.1"
+  },
+  "devDependencies": {
+    "vercel-cli": "^0.0.1"
   }
 }
